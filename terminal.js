@@ -40,16 +40,15 @@ print("You are a TwinSignal node.")
 break
 
 case "join network":
-print("Node accepted into the signal mesh.")
+joinNetwork()
 break
 
 case "scan":
-print("Scanning nearby nodes...")
-print("1 signal detected.")
+networkScan()
 break
 
 case "map":
-print("Opening constellation network map...")
+print("Opening constellation map...")
 break
 
 case "summon rabbit":
