@@ -52,8 +52,8 @@ print("Opening constellation map...")
 break
 
 case "summon rabbit":
-summonRabbit()
-break
+  summonRabbit();
+  break;
 
 default:
 print("Unknown command")
