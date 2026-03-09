@@ -6,6 +6,13 @@ function print(text) {
   output.scrollTop = output.scrollHeight;
 }
 
+function bootSequence() {
+  print("Initializing TwinSignal OS...");
+  print("Loading node registry...");
+  print("Establishing signal mesh...");
+  print("TwinSignal Terminal Ready");
+}
+
 cmd.addEventListener("keydown", function(e) {
 
   if (e.key === "Enter") {
@@ -58,3 +65,5 @@ function runCommand(command) {
   }
 
 }
+
+bootSequence();
