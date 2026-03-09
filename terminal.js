@@ -49,7 +49,7 @@ print("1 signal detected.")
 break
 
 case "map":
-print("Opening constellation map...")
+print("Opening constellation network map...")
 break
 
 case "summon rabbit":
