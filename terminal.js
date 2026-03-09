@@ -52,7 +52,7 @@ print("Opening constellation map...")
 break
 
 case "summon rabbit":
-print("Glitch rabbit anomaly detected 🐇")
+summonRabbit()
 break
 
 default:
