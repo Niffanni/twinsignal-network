@@ -24,83 +24,41 @@ this.value = ""
 
 function runCommand(command){
 
-if(command === "help"){
+switch(command){
+
+case "help":
 print("Available commands:")
 print("whoami")
 print("join network")
 print("scan")
 print("map")
 print("summon rabbit")
-return
-}
+break
 
-if(command === "whoami"){
+case "whoami":
 print("You are a TwinSignal node.")
-return
-}
+break
 
-if(command === "join network"){
+case "join network":
 print("Node accepted into the signal mesh.")
-return
-}
+break
 
-if(command === "scan"){
+case "scan":
 print("Scanning nearby nodes...")
 print("1 signal detected.")
-return
-}
+break
 
-if(command === "map"){
+case "map":
 print("Opening constellation map...")
-return
-}
+break
 
-if(command === "summon rabbit"){
+case "summon rabbit":
 print("Glitch rabbit anomaly detected 🐇")
-return
-}
+break
 
+default:
 print("Unknown command")
 
 }
-function runCommand(command){
-
-if(command === "help"){
-print("Available commands:")
-print("whoami")
-print("join network")
-print("scan")
-print("map")
-print("summon rabbit")
-return
-}
-
-if(command === "whoami"){
-print("You are a TwinSignal node.")
-return
-}
-
-if(command === "join network"){
-print("Node accepted into the signal mesh.")
-return
-}
-
-if(command === "scan"){
-print("Scanning nearby nodes...")
-print("1 signal detected.")
-return
-}
-
-if(command === "map"){
-print("Opening constellation map...")
-return
-}
-
-if(command === "summon rabbit"){
-print("Glitch rabbit anomaly detected 🐇")
-return
-}
-
-print("Unknown command")
 
 }
