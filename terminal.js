@@ -28,7 +28,7 @@ print("Opening constellation map...")
 break
 
 case "summon rabbit":
-summonRabbit()
+summonRabbit();
 break
 
 default:
