@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TwinSignal Network</title>
+
+<style>
+body{
+background:black;
+color:#00ff9c;
+font-family:monospace;
+padding:20px;
+}
+
+#output{
+height:80vh;
+overflow:auto;
+white-space:pre-wrap;
+}
+
+input{
+width:100%;
+background:black;
+border:none;
+color:#00ff9c;
+font-family:monospace;
+font-size:16px;
+outline:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>TwinSignal Network Terminal</h2>
+
+<div id="output"></div>
+
+<input id="cmd" placeholder="type help">
+
+<script>
+
+const output = document.getElementById("output")
+const cmd = document.getElementById("cmd")
+
+function print(text){
+output.innerHTML += text + "<br>"
+output.scrollTop = output.scrollHeight
+}
+
+cmd.addEventListener("keydown", function(e){
+
+if(e.key === "Enter"){
+
+let input = cmd.value.trim().toLowerCase()
+
+print("> " + input)
+
+if(input === "help"){
+print("commands:")
+print("whoami")
+print("join network")
+print("scan")
+print("summon rabbit")
+}
+
+else if(input === "whoami"){
+print("you are a signal node")
+}
+
+else if(input === "join network"){
+print("node accepted")
+}
+
+else if(input === "scan"){
+print("scanning nearby nodes...")
+print("1 node detected")
+}
+
+else if(input === "summon rabbit"){
+print("glitch rabbit detected 🐇")
+}
+
+else{
+print("unknown command")
+}
+
+cmd.value=""
+
+}
+
+})
+
+</script>
+
+</body>
+</html>
