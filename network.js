@@ -1,26 +1,22 @@
-function networkScan(){
+function networkScan() {
+  print("Scanning signal mesh...");
 
-print("Scanning signal mesh...")
+  const nodes = [
+    "node-alpha",
+    "node-beta",
+    "node-gamma"
+  ];
 
-let nodes = [
-"node-alpha",
-"node-beta",
-"node-gamma"
-]
-
-nodes.forEach(node=>{
-print("detected: " + node)
-})
-
+  nodes.forEach(function(node) {
+    print("detected: " + node);
+  });
 }
 
-function joinNetwork(){
+function joinNetwork() {
+  print("Attempting connection...");
 
-print("Attempting connection...")
-
-setTimeout(()=>{
-print("Connection established.")
-print("Welcome to the TwinSignal Network.")
-},500)
-
+  setTimeout(function() {
+    print("Connection established.");
+    print("Welcome to the TwinSignal Network.");
+  }, 500);
 }
