@@ -22,5 +22,3 @@ setTimeout(()=>{
 print("Connection established.")
 print("Welcome to the TwinSignal Network.")
 },500)
-
-}
